@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+
+    --fonte-01: 'League Spartan', sans-serif;
+    --fonte-02: 'Work Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-01);
+    color: var(--text-color);
+    background: var(--body-bg-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section#background {
+    background: url("../assets/read_news.jpg") right top;
+    background-size: cover;
+    align-self: flex-end;
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+}
+
+section#conteudo {
+    align-self: flex-start;
+    box-sizing: border-box;
+    position: absolute;
+    width: 50vw;
+    padding: 25px;
+}
+
+section#conteudo img#logo {
+    width: 25vw;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+section#conteudo > h1 {
+    font-family: var(--fonte-02);
+    font-size: 1.5em;
+    color: var(--title-color);
+    padding-bottom: 15px;
+}
+
+section#conteudo > h2 {
+    font-family: var(--fonte-01);
+    font-size: 1.25em;
+    font-weight: 500;
+    padding-bottom: 15px;
+    color: white;
+}
+
+section#conteudo > p {
+    font-size: 1.5em;
+    font-weight: 200;
+    line-height: 1.1em;
+    padding-bottom: 40px;
+}
+
+section#conteudo > form {
+    color: #A8A8A8;
+    display: flex;
+    flex-direction: column;
+}
+
+section#conteudo > form > label {
+    font-size: 1.5em;
+    display: block;
+    padding-bottom: 25px;
+}
+
+section#conteudo input#email {
+    height: 53px;
+    border: none;
+    border-left: 5px solid var(--title-color);
+    padding-left: 10px;
+    width: 1050px;
+}
+
+div.formulario {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1050px;
+    -webkit-box-shadow: 4px 10px 15px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 4px 10px 15px 0px rgba(0,0,0,0.5);
+    box-shadow: 4px 10px 15px 0px rgba(0,0,0,0.5);
+}
+
+section#conteudo input#email:focus-within {
+    outline: none;
+    border: none;
+    border-left: 5px solid var(--title-color);
+}
+
+section#conteudo input#email[placeholder] {
+    font-family: var(--fonte-02);
+}
+
+section#conteudo div#enviar {
+    height: 53px;
+    width: 53px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: var(--bg-button-color);
+    text-align: center;
+    padding-top: 14px;
+    box-sizing: border-box;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+section#conteudo div#enviar:hover {
+    opacity: .8;
+}
+
+div.button {
+    margin-top: 50px;
+    font-size: 1.5em;
+    color: var(--bg-button-color);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+div.button:hover {
+    color: white;
+}
+
+div.button span {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+div.button img {
+    height: 20px;
+}
